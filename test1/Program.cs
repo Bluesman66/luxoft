@@ -30,13 +30,13 @@ namespace test
             tree2.Add(16);
             tree2.Add(18);
 
-            if (CompareTrees<int>(tree1, tree2))
+            if (TreesEqual<int>(tree1, tree2))
                 Console.WriteLine("Trees are equal.");
             else
                 Console.WriteLine("Trees are not equal.");
         }
 
-        static bool CompareTrees<T>(BtnTree<T> tree1, BtnTree<T> tree2) where T : IComparable
+        static bool TreesEqual<T>(BtnTree<T> tree1, BtnTree<T> tree2) where T : IComparable
         {
             if (tree1.Count != tree2.Count)
                 return false;
