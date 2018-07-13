@@ -13,6 +13,8 @@ public class BtnTree<T> : IEnumerable<T> where T : IComparable
             _head = new Btn<T>(value);
         else
             AddTo(_head, value);
+
+        Count++;    
     }
 
     private void AddTo(Btn<T> node, T value)
@@ -30,9 +32,7 @@ public class BtnTree<T> : IEnumerable<T> where T : IComparable
                 node.Right = new Btn<T>(value);
             else
                 AddTo(node.Right, value);
-        }
-
-        Count++;
+        }        
     }
 
     public IEnumerator<T> InOrderTraversal()

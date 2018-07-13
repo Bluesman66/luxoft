@@ -9,15 +9,17 @@ namespace test
         static void Main(string[] args)
         {
             BtnTree<int> tree1 = new BtnTree<int>();
-            tree1.Add(10);
-            tree1.Add(3);
-            tree1.Add(2);
+            tree1.Add(16);
             tree1.Add(4);
             tree1.Add(12);
             tree1.Add(15);
-            tree1.Add(11);            
+            tree1.Add(11);                        
+            tree1.Add(10);
+            tree1.Add(3);
+            tree1.Add(2);
+            tree1.Add(18);            
 
-            BtnTree<int> tree2 = new BtnTree<int>();
+            BtnTree<int> tree2 = new BtnTree<int>();            
             tree2.Add(10);
             tree2.Add(3);
             tree2.Add(2);
@@ -25,6 +27,8 @@ namespace test
             tree2.Add(12);
             tree2.Add(15);
             tree2.Add(11);            
+            tree2.Add(16);
+            tree2.Add(18);
 
             if (CompareTrees<int>(tree1, tree2))
                 Console.WriteLine("Trees are equal.");
