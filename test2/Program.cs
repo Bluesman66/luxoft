@@ -24,13 +24,13 @@ namespace test2
             List<Element> list = new List<Element>()
             {
                 new Element() { Num = 1, Age = 32, Name = "John" },
-                new Element() { Num = 2, Age = 42, Name = "Alex" },
-                new Element() { Num = 3, Age = 42, Name = "Alex" },
-                new Element() { Num = 3, Age = 15, Name = "Alex" },
-                new Element() { Num = 4, Age = 42, Name = "Alex" },
-                new Element() { Num = 5, Age = 42, Name = "Alex" },
-                new Element() { Num = 5, Age = 22, Name = "Alex" },
-                new Element() { Num = 4, Age = 42, Name = "Alex" }
+                new Element() { Num = 2, Age = 52, Name = "Alex" },
+                new Element() { Num = 3, Age = 22, Name = "Ringo" },
+                new Element() { Num = 3, Age = 15, Name = "George" },
+                new Element() { Num = 4, Age = 12, Name = "Paul" },
+                new Element() { Num = 5, Age = 42, Name = "Freddie" },
+                new Element() { Num = 5, Age = 22, Name = "Brian" },
+                new Element() { Num = 4, Age = 18, Name = "Roger" }
             };
 
             var elements = FilterElements(list);
