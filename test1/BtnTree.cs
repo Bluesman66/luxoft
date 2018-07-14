@@ -35,7 +35,7 @@ public class BtnTree<T> : IEnumerable<T> where T : IComparable
         }        
     }
 
-    public IEnumerator<T> InOrderTraversal()
+    private IEnumerator<T> InOrderTraversal()
     {
         if (_head != null)
         {
